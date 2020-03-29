@@ -1,0 +1,8 @@
+name: GUI
+main: me.guwooing.guiface.Main
+version: 0.0.1
+author: Guwooing
+description: A simple Minecraft GUI
+
+commands:
+  test:
