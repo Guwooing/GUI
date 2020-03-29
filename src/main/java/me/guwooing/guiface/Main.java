@@ -9,6 +9,6 @@ public class Main extends JavaPlugin {
     public void onEnable() {
         new InventoryClickListener(this);
         UI.initialize();
-        this.getCommand("testing").setExecutor(new Commands(this));
+        this.getCommand("staff").setExecutor(new Commands(this));
     }
 }
