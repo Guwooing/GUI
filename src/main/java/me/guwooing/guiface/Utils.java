@@ -15,7 +15,7 @@ public class Utils {
         return ChatColor.translateAlternateColorCodes('&', s);
     }
 
-    public static ItemStack createItem(Inventory inv, int materialId, int amount, int invSlot, String displayName, String... loreString) {
+    public static ItemStack createItem(Inventory inv, String materialId, int amount, int invSlot, String displayName, String... loreString) {
 
         ItemStack item;
         List<String> lore = new ArrayList();
@@ -35,7 +35,7 @@ public class Utils {
 
     }
 
-    public static ItemStack createItemByte(Inventory inv, int materialId, int byteId, int amount, int invSlot, String displayName, String... loreString) {
+    public static ItemStack createItemByte(Inventory inv, String materialId, int byteId, int amount, int invSlot, String displayName, String... loreString) {
 
         ItemStack item;
         List<String> lore = new ArrayList();

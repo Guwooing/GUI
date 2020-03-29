@@ -20,7 +20,7 @@ public class UI {
     public static Inventory GUI (Player p) {
         Inventory toReturn = Bukkit.createInventory(null, inv_rows, inventory_name);
 
-        Utils.createItem(inv, 4, 1, 1, "Test Item", "&7This is a lore line", "&bSecond line");
+        Utils.createItem(inv, "COBBLESTONE", 1, -1, "Test Item", "&7This is a lore line", "&bSecond line");
 
         toReturn.setContents(inv.getContents());
         return toReturn;

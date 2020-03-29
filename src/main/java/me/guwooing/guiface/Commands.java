@@ -1,17 +1,18 @@
 package me.guwooing.guiface;
 
+import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
-public class Command implements CommandExecutor {
+public class Commands implements CommandExecutor {
 
     private Main plugin;
 
-    public Command(Main plugin) {
+    public Commands(Main plugin) {
         this.plugin = plugin;
 
-        plugin.getCommand("test").setExecutor(this);
+
     }
 
     @Override
@@ -23,7 +24,7 @@ public class Command implements CommandExecutor {
         Player p = (Player) sender;
 
         if (p.hasPermission("blah blah")) {
-         //UI.openInventory(UI.GUI(p));
+            p.openInventory(UI.GUI(p));
         }
         return false;
     }
