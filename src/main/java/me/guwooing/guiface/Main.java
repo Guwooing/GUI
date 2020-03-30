@@ -5,6 +5,7 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 public class Main extends JavaPlugin {
 
+    //start up logic
     @Override
     public void onEnable() {
         new InventoryClickListener(this);

@@ -31,7 +31,7 @@ public class UI {
     }
 
     public static void clicked(Player p, int slot, ItemStack clicked, Inventory inv) {
-        if (clicked.getItemMeta().getDisplayName().equalsIgnoreCase(Utils.chat("&cTest Item"))) {
+        if (clicked.getItemMeta().getDisplayName().equalsIgnoreCase(Utils.chat("&cALL"))) {
             p.setDisplayName(Utils.chat("&8[&6*&8] &6You have successfully made a GUI!"));
         }
     }

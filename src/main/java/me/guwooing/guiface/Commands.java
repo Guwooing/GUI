@@ -13,8 +13,6 @@ public class Commands implements CommandExecutor {
 
     public Commands(Main plugin) {
         this.plugin = plugin;
-
-
     }
 
     @Override
